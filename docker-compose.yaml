@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  nginx:
+    build:
+      context: "./nginx"
+      dockerfile: "Dockerfile"
+  web:
+    build:
+      context: "./nextjs-web-app"
+      dockerfile: "Dockerfile"    
